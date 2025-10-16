@@ -6,16 +6,9 @@
     </head>
     <body>
         <header>
-            <nav class="topnav" id = "myTopnav">
-                <a class = "active" href = "info.html"> Information </a>
+            <nav class="topnav">
+                <a href = "info.html" class = "active"> Information </a>
                 <a href = "service.html"> App Services </a>
-                
-                <!-- Adding a menu button -->
-                <div class = "icon" id = "menu" onclick = "toggleNav()">
-                    <div class = "bar1"> </div>
-                    <div class = "bar2"> </div>
-                    <div class = "bar3"> </div>
-                </div>
             </nav>
         </header>
         <main class = "content">
@@ -51,16 +44,5 @@
                 </ul>
             </p>
         </main>
-
-        <!-- Menu button implementation continued -->
-        <script>
-            function toggleNav() {
-                //x.classList.toggle("change");   // Menu button will show an X when clicked
-                var nav = document.getElementById("myTopnav");
-                var icon = document.getElementById("menu");
-                nav.classList.toggle("responsive");
-                icon.classList.toggle("change");
-            }
-        </script>
     </body>
 </html>

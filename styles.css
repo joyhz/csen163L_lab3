@@ -13,6 +13,7 @@ body {
   display: flex;
   align-items: center;
   overflow: hidden;
+  width: 100%;
 }
 
 /* Styling the links inside the navigation bar */
@@ -22,6 +23,7 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 18px;
+  width: auto;
 }
 
 /* Change the color of links on hover */
@@ -46,14 +48,15 @@ p, ul { font-size: 18px; }
   /* Changing the navigation bar */
   .topnav {
     flex-direction: column; /* Vertical navigation bar */
-    position: relative;
-    width: 100%;
+    align-items: stretch;
   }
 
   .topnav a { 
     display: block;
     text-align: left;
+    width: 100%;
     border-top: 1px solid #c9cba3; /* Separating border between navigation bar options */
+    box-sizing: border-box;
   }
 
   /* Removing border from the first link */
@@ -66,5 +69,8 @@ p, ul { font-size: 18px; }
 @media only screen and (min-width: 768px) {
   /* Horizontal navigation bar */
   .topnav { flex-direction: row; }
-  .topnav a { display: block; }
+  .topnav a { 
+    display: block;
+    width: auto;
+  }
 }

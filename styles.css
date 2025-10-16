@@ -43,6 +43,13 @@ h1 { font-size: 30px; }
 h2 { font-size: 25px; }
 p, ul { font-size: 18px; }
 
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 /* For mobile devices: phones, tablets */
 @media only screen and (max-width: 767px) {
   /* Changing the navigation bar */
@@ -63,6 +70,8 @@ p, ul { font-size: 18px; }
   .topnav a:first-of-type {
     border-top: none;
   }
+
+  .responsive-img { width: 80%; }
 }
 
 /* For larger devices: laptops, desktop computers */

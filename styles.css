@@ -63,6 +63,7 @@ p, ul { font-size: 18px; }
   background-color: rgba(102, 155, 188, 0.20);  /* Making the background 25% transparent */
 }
 
+/* Adjusting the popup and its positioning */
 .popup-content {
   background-color: #669bbc;  /* Popup background color */
   color: #001927; /* Popup text color */
@@ -86,6 +87,65 @@ p, ul { font-size: 18px; }
 #close-popup:hover {
   color: #fadde1; /* Popup X button hover color */
 }
+
+/* Centering the support form */
+.support-form {
+  max-width: 600px;
+  margin: 40px auto;   /* Centering it horizontally */
+  padding: 20px;
+  background-color: #d7e3fc;
+  border: 2px solid #274c77;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(182, 204, 254, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style labels */
+.support-form label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #001d3d;
+}
+
+/* Input and textarea boxes */
+.support-form input,
+.support-form textarea {
+  padding: 12px;
+  border: 1px solid #6096ba;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #edf2fb;  /* white box background */
+  color: #001d3d;
+}
+
+/* Highlight on focus */
+.support-form input:focus,
+.support-form textarea:focus {
+  border-color: #274c77;
+  background-color: #f4effa;
+  outline: none;
+  box-shadow: 0 0 8px rgba(182, 204, 254, 0.5);
+}
+
+/* Submit button */
+.support-form button {
+  background-color: #bbd0ff;
+  color: #001d3d;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.support-form button:hover {
+  background-color: #f4effa;
+}
+
 
 /* For mobile devices: phones, tablets */
 @media only screen and (max-width: 767px) {

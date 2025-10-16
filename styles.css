@@ -13,7 +13,6 @@ body {
   display: flex;
   align-items: center;
   overflow: hidden;
-  position: relative;
 }
 
 /* Styling the links inside the navigation bar */
@@ -42,56 +41,24 @@ h1 { font-size: 30px; }
 h2 { font-size: 25px; }
 p, ul { font-size: 18px; }
 
-/* Navigation menu button, not displayed on desktop */
-.icon {
-  display: none;
-  cursor: pointer;
-  padding: 14px 16px;
-}
-
-.bar1, .bar2, .bar3 {
-  width: 22px;
-  height: 3px;
-  background-color: #333d29;
-  margin: 5px 0;
-  transition: 0.3s;
-}
-
-/* Changing the menu button to an X when clicked */
-.change .bar1 {
-  transform: rotate(-45deg) translate(-6px, 6px);
-}
-.change .bar2 {
-  opacity: 0;
-}
-.change .bar3 {
-  transform: rotate(45deg) translate(-6px, -6px);
-}
-
 /* For mobile devices: phones, tablets */
 @media only screen and (max-width: 767px) {
   /* Changing the navigation bar */
   .topnav {
     flex-direction: column; /* Vertical navigation bar */
-    align-items: flex-start;	
+    align-items: stretch;	
   }
 
   .topnav a { 
-    display: none;
-    width: 100%;
+    display: block;
     text-align: left;
     border-top: 1px solid #c9cba3; /* Separating border between navigation bar options */
   }
 
-  .topnav.responsive a { display: block; }
-
   /* Removing border from the first link */
-  .topnav.responsive a:first-of-type {
+  .topnav a:first-of-type {
     border-top: none;
   }
-
-  /* Displaying the menu button */
-  .icon { display: block; }
 }
 
 /* For larger devices: laptops, desktop computers */
@@ -99,5 +66,4 @@ p, ul { font-size: 18px; }
   /* Horizontal navigation bar */
   .topnav { flex-direction: row; }
   .topnav a { display: block; }
-  .icon { display: none; }
 }

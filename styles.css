@@ -46,7 +46,8 @@ p, ul { font-size: 18px; }
   /* Changing the navigation bar */
   .topnav {
     flex-direction: column; /* Vertical navigation bar */
-    align-items: stretch;	
+    position: relative;
+    width: 100%;
   }
 
   .topnav a { 

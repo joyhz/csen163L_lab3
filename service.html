@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <link rel = "stylesheet" href = "styles.css">
+    <head>
+        <title> Operating Bye-Bye Bottles </title>
+    </head>
+    <body>
+        <header>
+            <nav class = "topnav">
+                <a href = "info.html"> Information </a>
+                <a class = "active" href = "service.html"> App Services </a>
+                
+                <!-- Adding a menu button -->
+                <div class = "icon" onclick = "toggleNav(this)">
+                    <div class = "bar1"> </div>
+                    <div class = "bar2"> </div>
+                    <div class = "bar3"> </div>
+                </div>
+            </nav>
+        </header>
+        <main class = "content">
+            <h2> What is Bye-Bye Bottles? </h2>
+            <p>
+                Bye-Bye Bottles is an app to educate people about Bottle Bills and motivate them to recycle containers, 
+                as well as a helper to locate bottle redemption centers near them. It's an app that people hopefully wouldn't need to use much
+                for Bottle Bill information, and moreso an easy way to locate redemption centers near them.
+            </p>
+
+            <h2> Features of the app: </h2>
+            <p>
+                <ul>
+                    <li> Login — so users can save their information or stay as a guest </li>
+                    <li> Money tracker + camera access to scan barcodes — users can scan the barcode of a bottle before they recycle it and the app will track how much money they've made </li>
+                    <li> Map — an in-app map will make it easy for users to locate a redemption center near them </li>
+                    <li> Bottle Bill information — while the app will provide links to official Bottle Bill websites, it'll also provide an overview of Bottle Bills </li>
+                    <li> Menu — for organization of app features and easy accessibility for the user </li>
+                </ul>
+            </p>
+
+            <h2> Web-app operations: </h2>
+            <p>
+                1. Users land on the site and log in or stay as a guest. <br>
+                2. Users can click to the home page to get a brief overview of Bottle Bills. <br>
+                3. Users can click the menu and go look at resources, the map, open the camera for scanning, or look at their money tracker. <br>
+                4. In the map, users can input their ZIP code or county, or allow location services, to find their nearest redemption center within a certain radius that they can set. <br>
+                5. From the camera section, they can scan a container zipcode and save its value to their money tracker. <br>
+                6. In the money tracker, users can see how much money they've earned by recycling containers, and see a breakdown of what types of containers they've recycled. <br>
+            </p>
+        </main>
+
+        <!-- Menu button implementation continued -->
+        <script>
+            function toggleNav(x) {
+                x.classList.toggle("change");   // Menu button will show an X when clicked
+                var nav = document.querySelector(".topnav");
+                nav.classList.toggle("responsive");
+            }
+        </script>
+    </body>
+</html>

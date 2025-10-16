@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <link rel = "stylesheet" href = "styles.css">
+    <head>
+        <title> Bye Bottles </title>
+    </head>
+    <body>
+        <header>
+            <nav class="topnav">
+                <a class = "active" href = "info.html"> Information </a>
+                <a href = "service.html"> App Services </a>
+                
+                <!-- Adding a menu button -->
+                <div class = "icon" onclick = "toggleNav(this)">
+                    <div class = "bar1"> </div>
+                    <div class = "bar2"> </div>
+                    <div class = "bar3"> </div>
+                </div>
+            </nav>
+        </header>
+        <main class = "content">
+            <h1> About Bye-Bye Bottles </h1>
+            <h2> What are Bottle Bills? </h2>
+            <p>
+                Have you ever seen a small price amount on single-use bottles and cans?
+                That small 5, 10, or maybe even 24 cent value you see is a result of Bottle Bills.
+                Currently in place only in ten states in the US (but not worldwide), Bottle Bills 
+                place a small, refundable deposit on beverage containers. Upon returning an empty 
+                container to a redemption center, you can receive a few cents back!
+                If you live in a Bottle Bill state but don't know where redemption centers are, Bye-Bye Bottles is the place to look!
+                <br>
+                <center>
+                    <img src = "https://ctmirror.org/wp-content/uploads/2019/02/bottle-bill-example-1-e1549461060833.jpg" alt = "Dr. Pepper bottle with the text 'CA CRV OR-MI 10¢' on the label.">
+                </center>
+            </p>
+
+            <h2> Who is Bye-Bye Bottles for? </h2>
+            <p>
+                People of all ages in the U.S. can use Bye-Bye Bottles whether it's to find a redemption center near them, or learn more about Bottle Bills in the U.S.
+                Even tourists visiting the U.S. can get a refundable deposit on bottles they bought in a Bottle Bill state! <br>
+                Note: Bye-Bye Bottles is best for those who understand English.
+            </p>
+
+            <h2> Resources </h2>
+            <p>
+                <ul>
+                    <li> <a href = "https://www.bottlebill.org/index.php/about-bottle-bills/what-is-a-bottle-bill"> About Bottle Bills </a> </li>
+                    <li> <a href = "https://www.bottlebill.org/legislation/usa.htm"> U.S. Bottle Bills </a> </li>
+                    <li> <a href = "https://www.cawrecycles.org/how-the-california-bottle-bill-works"> How it works in CA </a> </li>
+                    <li> <a href = "https://www2.calrecycle.ca.gov/BevContainer/RecyclingCenters/"> CA Redemption Centers </a> </li>
+                </ul>
+            </p>
+        </main>
+
+        <!-- Menu button implementation continued -->
+        <script>
+            function toggleNav(x) {
+                x.classList.toggle("change");   // Menu button will show an X when clicked
+                var nav = document.querySelector(".topnav");
+                nav.classList.toggle("responsive");
+            }
+        </script>
+    </body>
+</html>

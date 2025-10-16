@@ -73,10 +73,15 @@ p, ul { font-size: 18px; }
   /* Changing the navigation bar */
   .topnav {
     flex-direction: column; /* Vertical navigation bar */
-    align-items: stretch;	
+    align-items: flex-start;	
   }
 
-  .topnav a { display: none }
+  .topnav a { 
+    display: none;
+    width: 100%;
+    border-top: 1px solid #c9cba3; /* Separating border between navigation bar options */
+    text-align: left;
+  }
 
   .topnav a.icon {
     display: block;
@@ -85,8 +90,10 @@ p, ul { font-size: 18px; }
 
   .topnav.responsive a {
     display: block;
+    /*
     text-align: left;
-    border-top: 1px solid #c9cba3; /* Separating border between navigation bar options */
+    border-top: 1px solid #c9cba3;
+    */
   }
 
   /* Removing border from the first link */

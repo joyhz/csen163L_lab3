@@ -9,8 +9,11 @@ body {
 
 .topnav {
   background-color:#ffffff;
-  overflow: hidden;
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
 }
 
 /* Styling the links inside the navigation bar */
@@ -43,8 +46,7 @@ p, ul { font-size: 18px; }
 .icon {
   display: none;
   cursor: pointer;
-  padding: 10px;
-  margin-left: auto;  /* Menu button will be on the right of the screen */
+  padding: 14px 16px;
 }
 
 .bar1, .bar2, .bar3 {

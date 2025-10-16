@@ -3,16 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Bye Bottles </title>
+        <title> Bye-Bye Bottles </title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <div id="welcome-popup" class="popup">
+            <div class="popup-content">
+                <span id="close-popup">&times; </span>
+                <h2> Welcome to Bye-Bye Bottles! </h2>
+                <p> Explore Bottle Bills and find redemption centers near you now! </p>
+            </div>
+        </div>
+
         <header>
             <nav class="topnav">
                 <a href="info.html" class="active"> Information </a>
                 <a href="service.html"> App Services </a>
+                <a href="faq.html"> FAQ </a>
+                <a href="support.html"> Need More Support? </a>
             </nav>
         </header>
+
         <main class="content">
             <h1> About Bye-Bye Bottles </h1>
             <h2> What are Bottle Bills? </h2>
@@ -26,8 +37,8 @@
                 <br>
                 <center>
                     <img class="responsive-img"
-                        src="https://ctmirror.org/wp-content/uploads/2019/02/bottle-bill-example-1-e1549461060833.jpg" 
-                        alt="Dr. Pepper bottle with the text 'CA CRV OR-MI 10¢' on the label.">
+                         src="https://ctmirror.org/wp-content/uploads/2019/02/bottle-bill-example-1-e1549461060833.jpg" 
+                         alt="Dr. Pepper bottle with the text 'CA CRV OR-MI 10¢' on the label.">
                 </center>
             </p>
 
@@ -48,5 +59,24 @@
                 </ul>
             </p>
         </main>
+
+        <!-- Welcome popup JavaScript -->
+        <script>
+          window.onload = function() {
+            const popup = document.getElementById("welcome-popup");
+            const closeBtn = document.getElementById("close-popup");
+            popup.style.display = "block";
+
+            closeBtn.onclick = function() {
+              popup.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+              if (event.target == popup) {
+                popup.style.display = "none";
+              }
+            }
+          };
+        </script>
     </body>
 </html>

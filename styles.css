@@ -5,12 +5,12 @@
 body { 
   background-color: #fbfbf2;
   margin: 0;
+  padding: 0;
 }
 
 .topnav {
   background-color:#ffffff;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   overflow: hidden;
   position: relative;
@@ -22,7 +22,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 /* Change the color of links on hover */
@@ -79,25 +79,14 @@ p, ul { font-size: 18px; }
   .topnav a { 
     display: none;
     width: 100%;
+    text-align: left;
     border-top: 1px solid #c9cba3; /* Separating border between navigation bar options */
-    text-align: left;
   }
 
-  .topnav a.icon {
-    display: block;
-    text-align: right;
-  }
-
-  .topnav.responsive a {
-    display: block;
-    /*
-    text-align: left;
-    border-top: 1px solid #c9cba3;
-    */
-  }
+  .topnav.responsive a { display: block; }
 
   /* Removing border from the first link */
-  .topnav.responsive a:first-child {
+  .topnav.responsive a:first-of-type {
     border-top: none;
   }
 
@@ -110,4 +99,5 @@ p, ul { font-size: 18px; }
   /* Horizontal navigation bar */
   .topnav { flex-direction: row; }
   .topnav a { display: block; }
+  .icon { display: none; }
 }
